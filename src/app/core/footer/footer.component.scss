@@ -2,4 +2,22 @@
 
 .app-footer {
   background-color: $primary-dark;
+
+  &__social {
+    display: flex;
+
+    &-link {
+      width: 32px;
+      height: 32px;
+
+      &--fb {
+        background-image: url('../../../assets/icons/facebook.svg');
+        margin-right: 16px;
+      }
+
+      &--inst {
+        background-image: url('../../../assets/icons/instagram.svg');
+      }
+    }
+  }
 }

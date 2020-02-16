@@ -1,0 +1,11 @@
+.app-home {
+  &-landing {
+    height: 100vh;
+    background-image: image-set(
+      url(../../assets/landing.jpg) 3x,
+      url(../../assets/landing-sm.jpg) 1x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
