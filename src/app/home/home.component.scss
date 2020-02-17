@@ -1,11 +1,39 @@
+@import '../../sass/variables';
+
 .app-home {
   &-landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FAF9F5;
     height: 100vh;
-    background-image: image-set(
-      url(../../assets/landing.jpg) 3x,
-      url(../../assets/landing-sm.jpg) 1x
-    );
+    background-image:url(../../assets/landing.jpg); // add image set
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__wrapper {
+      padding: 24px 32px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    &__txt {
+      letter-spacing: 3px;
+      font-weight: 300;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-weight: 900;
+      font-size: 2rem;
+
+      &-item {
+        font-family: 'Marck Script', cursive;
+        font-weight: normal;
+      }
+    }
   }
 }
