@@ -1,0 +1,8 @@
+@import '../../../sass/variables';
+
+.app-nav {
+  &-item {
+    color: $primary-light;
+    padding: 8px 16px;
+  }
+}

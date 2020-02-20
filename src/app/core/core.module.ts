@@ -5,6 +5,7 @@ import { FooterComponent } from './footer';
 import { LogoComponent } from './logo';
 import { NavigationComponent } from './navigation';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from '../shared';
 
 
 
@@ -12,7 +13,8 @@ import { RouterModule } from '@angular/router';
   declarations: [HeaderComponent, FooterComponent, LogoComponent, NavigationComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   exports: [HeaderComponent, FooterComponent, LogoComponent]
 })
