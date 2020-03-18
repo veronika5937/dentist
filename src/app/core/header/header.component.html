@@ -1,14 +1,18 @@
-<header class="app-header app-container">
-  <a href="/"><app-logo></app-logo></a>
+<header class="app-header" [ngClass]="{'app-header--dark': isScrolled$ | async}">
+  <div class="app-container app-header__wrapper">
+    <a href="/"><app-logo></app-logo></a>
 
-  <div class="app-contacts">
-    <address class="app-contacts__item app-contacts__item--address">
-      <app-svg icon="icon-location" class="app-contacts__icon"></app-svg>м. Дрогобич вул. <br> Євгена Коновальця 8
-    </address>
-    <a href="tel:+380930203621" class="app-contacts__item app-contacts__item--phone">
-      <app-svg icon="icon-phone" class="app-contacts__icon"></app-svg>093-02-03-621
-    </a>
+    <div class="app-contacts">
+      <a target="_blank" href="https://goo.gl/maps/mjS9zmxC6Pd84mKP9">
+        <address class="app-contacts__item app-contacts__item--address">
+          <app-svg icon="icon-location" class="app-contacts__icon"></app-svg>м. Дрогобич вул. <br> Євгена Коновальця 8
+        </address>
+      </a>
+      <a href="tel:+380930203621" class="app-contacts__item app-contacts__item--phone">
+        <app-svg icon="icon-phone" class="app-contacts__icon"></app-svg>093-02-03-621
+      </a>
+    </div>
+
+    <app-navigation></app-navigation>
   </div>
-
-  <app-navigation></app-navigation>
 </header>

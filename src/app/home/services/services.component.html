@@ -1,0 +1,9 @@
+<div class="services">
+  <article class="services-item" *ngFor="let service of services; trackBy: trackByFn">
+    <div class="services-item__char">{{service.name.charAt(0)}}</div>
+    <div class="services-item__content">
+      <h3 class="services-item__title">{{service.name}}</h3>
+      <p class="services-item__txt">{{service.description}}</p>
+    </div>
+  </article>
+</div>

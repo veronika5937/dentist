@@ -1,0 +1,46 @@
+@import '../../../sass/variables';
+
+:host {
+  display: block;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -24px;
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1 0 268px;
+    position: relative;
+    max-width: 320px;
+    min-height: 300px;
+    margin: 14px 24px;
+
+    &__char {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      font: 800 18rem "Marck Script", cursive;
+      color: rgba($primary-dark, 0.4);
+      z-index: -1;
+    }
+
+    &__title {
+      letter-spacing: 3px;
+      font-weight: 300;
+    }
+
+    &__txt {
+      font-size: 12px;
+      color: darken($color: $primary-dark, $amount: 20)
+    }
+
+    &__content {
+      margin-left: 38px;
+    }
+  }
+}
